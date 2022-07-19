@@ -47,7 +47,7 @@ function scissor() {
       document.getElementById("res").innerHTML = "You won";
     } else if (position == 3) {
       document.getElementById("comp-guess").src = "Images/scissor.png";
-      document.getElementById("res").innerHTML = "Tieds";
+      document.getElementById("res").innerHTML = "Tied";
     }
   };
 }
