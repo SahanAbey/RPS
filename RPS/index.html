@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/17f7785ebd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h3 style="color: #219ebc">Welcome to Rock Paper Scissor Game</h3>
+    <br />
+    <h4 class="head" style="color: #3d405b">What you guess:</h4>
+
+    <section class="img">
+      <img src="Images/rock.png" width="100px" />
+      <img src="Images/paper.png" width="100px" class="paper" />
+      <img src="Images/scissor.png" width="100px" class="scissor" /><br /><br />
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="rock-btn"
+        onclick="rock()"
+      >
+        Guess <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="paper-btn"
+        onclick="paper()"
+      >
+        Guess <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="scissor-btn"
+        onclick="scissor()"
+      >
+        Guess <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </section>
+    <br />
+    <div class="row">
+      <div class="col-lg-4">
+        <h4>You Guess</h4>
+        <img id="guess-obj" width="100px" />
+      </div>
+      <div class="col-lg-4">
+        <h4>Computer Guess</h4>
+        <img id="comp-guess" width="100px" />
+      </div>
+      <div class="col-lg-4">
+        <h4>The Result</h4>
+        <br /><br />
+        <h3 id="res" style="color: #e63946"></h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
